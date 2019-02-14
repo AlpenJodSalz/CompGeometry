@@ -18,7 +18,6 @@ p11 = Point 5 3
 --random order
 points = [p7, p11, p5 , p1 , p4 , p8, p9, p0, p10, p2, p3, p6]
 
--- x->X Y->y
 orderPointClockwise :: Point -> Point -> Ordering
 orderPointClockwise (Point x1 y1) (Point x2 y2) | x1 < x2 = LT
 						| x1 > x2 = GT
